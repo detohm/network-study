@@ -78,6 +78,8 @@ int main(int argc, char *argv[]) {
       printf("Error in read");
     }
 
+    printf("%s\n", buff);
+
     write(new_fd, res, res_len);
     close(new_fd);
   }
